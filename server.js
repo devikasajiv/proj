@@ -10,11 +10,16 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 // MySQL connection (CHANGE THIS LATER FOR RENDER)
-const db = mysql.createConnection({
-  host: "localhost",
+const mysql = require("mysql2");
+
+const db = mysql.createPool({
+  host: "interchange.proxy.rlwy.net",
   user: "root",
-  password: "devikahouse69/",
-  database: "portfolio_db"
+  password: "DcxNIVIZOsbDMKAYAgydzgTUszdhrTsg",
+  database: "railway",
+  port: 10375,
+  waitForConnections: true,
+  connectionLimit: 10
 });
 
 db.connect(err => {
