@@ -1,20 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Devika Sajeev Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Devika Sajeev</h1>
-<p>Interior Designer Portfolio</p>
+<!-- NAVBAR -->
+<header>
+  <h2>Devika Sajeev</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<form id="contactForm">
-  <input type="text" placeholder="Name" id="name" required>
-  <input type="email" placeholder="Email" id="email" required>
-  <textarea placeholder="Message" id="message" required></textarea>
-  <button type="submit">Send</button>
-</form>
+<!-- HERO -->
+<section class="hero">
+  <h1>Hello, I'm Devika Sajeev</h1>
+  <p>Interior Designer | Creative Thinker</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am passionate about interior design and creating beautiful, functional spaces.
+    I enjoy blending creativity with practical solutions to bring ideas to life.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card">Interior Design</div>
+    <div class="card">Space Planning</div>
+    <div class="card">AutoCAD</div>
+    <div class="card">3D Design</div>
+    <div class="card">Creativity</div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>BCA (Bachelor of Computer Applications)</h3>
+      <p>Kristu Jayanti University</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Name" id="name" required>
+    <input type="email" placeholder="Email" id="email" required>
+    <textarea placeholder="Message" id="message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
 <script src="script.js"></script>
 </body>
